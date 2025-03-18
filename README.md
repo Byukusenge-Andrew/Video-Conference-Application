@@ -43,8 +43,8 @@ A real-time video conferencing application built with React, Node.js, WebRTC, an
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/Byukusenge-Andrew/video-conference-app.git
-   cd video-conference-app
+   git clone https://github.com/Byukusenge_Andrew/video-conference-application.git
+   cd video-conference-application
    ```
 
 2. Install dependencies for both client and server
@@ -62,10 +62,22 @@ A real-time video conferencing application built with React, Node.js, WebRTC, an
    
    Create a `.env` file in the server directory with the following variables:
    ```
+   # Server configuration
    PORT=5000
+   NODE_ENV=development
+   
+   # Database configuration
    DATABASE_URL="mysql://username:password@localhost:3306/video_conference"
+   
+   # Authentication
    JWT_SECRET="your-secret-key"
+   JWT_EXPIRE="24h"
+   
+   # CORS settings
    CLIENT_URL="http://localhost:3000"
+   
+   # Optional: For production
+   # SECURE_COOKIES=true
    ```
 
 4. Set up the database
